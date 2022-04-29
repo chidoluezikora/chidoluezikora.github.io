@@ -1,3 +1,3 @@
 
 ### Hi, I am Chidolue Zikora
-I have an affinity for coding in genral and am currently studying Information Engineering for my bachelor's degree. 
+I have an affinity for coding and am currently studying bachelor's degree in Information Engineering. 
