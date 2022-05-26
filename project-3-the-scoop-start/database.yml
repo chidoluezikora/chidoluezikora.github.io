@@ -1,11 +1,11 @@
 users:
   chidolue:
-    username: "Chidolue Zikora"
+    username: Chidolue Zikora
     articleIds:
       - 1
     commentIds: []
   spongebob:
-    username: "SpongeBob SquarePants"
+    username: SpongeBob SquarePants
     articleIds:
       - 2
     commentIds:
@@ -14,25 +14,47 @@ users:
     username: Morty
     articleIds: []
     commentIds: []
+  Thomas Shelby:
+    username: Thomas Shelby
+    articleIds: []
+    commentIds:
+      - 2
+  Rick:
+    username: Rick
+    articleIds: []
+    commentIds: []
 articles:
   '1':
     id: 1
-    title: "Trending: The Scoop"
+    title: 'Trending: The Scoop'
     url: 'https://chidoluezikora.github.io/project-3-the-scoop-start/'
     username: chidolue
-    commentIds: []
-    upvotedBy: []
+    commentIds:
+      - 2
+    upvotedBy:
+      - Thomas Shelby
     downvotedBy: []
-    comments: []
+    comments:
+      - &ref_1
+        id: 2
+        body: >-
+          Interesting prospect you've got here. I don't suppose it'll be a good
+          place to keep Grace's secret.
+        username: Thomas Shelby
+        articleId: 1
+        upvotedBy:
+          - Rick
+        downvotedBy: []
   '2':
     id: 2
-    title: "Beautiful Bikini Bottom"
+    title: Beautiful Bikini Bottom
     url: 'https://en.wikipedia.org/wiki/SpongeBob_SquarePants/'
     username: spongebob
     commentIds:
       - 1
-    upvotedBy: 
+    upvotedBy:
       - chidolue
+      - Thomas Shelby
     downvotedBy: []
     comments:
       - &ref_0
@@ -45,4 +67,5 @@ articles:
 nextArticleId: 3
 comments:
   '1': *ref_0
+  '2': *ref_1
 nextCommentId: 2
