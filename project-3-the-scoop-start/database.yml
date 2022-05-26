@@ -1,40 +1,44 @@
 users:
-  asdb:
-    username: asdb
+  chidolue:
+    username: "Chidolue Zikora"
     articleIds:
       - 1
     commentIds: []
-  mdol:
-    username: mdol
+  spongebob:
+    username: "SpongeBob SquarePants"
     articleIds:
       - 2
     commentIds:
       - 1
+  morty:
+    username: Morty
+    articleIds: []
+    commentIds: []
 articles:
   '1':
     id: 1
-    title: bad
-    url: 'http://www.google.com'
-    username: asdb
+    title: "Trending: The Scoop"
+    url: 'https://chidoluezikora.github.io/project-3-the-scoop-start/'
+    username: chidolue
     commentIds: []
     upvotedBy: []
     downvotedBy: []
     comments: []
   '2':
     id: 2
-    title: Title
-    url: 'http://google.com'
-    username: mdol
+    title: "Beautiful Bikini Bottom"
+    url: 'https://en.wikipedia.org/wiki/SpongeBob_SquarePants/'
+    username: spongebob
     commentIds:
       - 1
-    upvotedBy: []
-    downvotedBy:
-      - mdol
+    upvotedBy: 
+      - chidolue
+    downvotedBy: []
     comments:
       - &ref_0
         id: 1
         body: Hi
-        username: mdol
+        username: morty
         articleId: 2
         upvotedBy: []
         downvotedBy: []
