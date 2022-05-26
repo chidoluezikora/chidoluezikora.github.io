@@ -3,7 +3,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-    background-image: url("./images/pattern.jpeg");
+    background-image: url("../images/pattern.jpeg");
     font-size: 100px;
     font-weight: bold;
     color: khaki;
